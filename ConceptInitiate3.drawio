@@ -1,0 +1,111 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.1.1 Chrome/132.0.6834.210 Electron/34.3.3 Safari/537.36" version="26.1.1">
+  <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
+    <mxGraphModel dx="4002" dy="1458" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="iGYgX2JuM9Vgu7zr0Hat-9" value="WeatherSystem" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1330" y="162" width="370" height="160" as="geometry">
+            <mxRectangle x="-1330" y="290" width="130" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iGYgX2JuM9Vgu7zr0Hat-10" value="&lt;div&gt;-forecastWorker: ForecastWorker&lt;br/&gt;-dailyManager: DailyForecastManager&lt;br/&gt;-hourlyManager: HourlyForecastManager&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="iGYgX2JuM9Vgu7zr0Hat-9">
+          <mxGeometry y="26" width="370" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="iGYgX2JuM9Vgu7zr0Hat-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="iGYgX2JuM9Vgu7zr0Hat-9">
+          <mxGeometry y="90" width="370" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="iGYgX2JuM9Vgu7zr0Hat-12" value="&lt;div&gt;+updateWeatherData(latitude: double, longitude: double)&lt;br/&gt;+getDailyForecasts(): DailyForecast[*]&lt;br/&gt;+getHourlyForecasts(): HourlyForecast[*]&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="iGYgX2JuM9Vgu7zr0Hat-9">
+          <mxGeometry y="98" width="370" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="iGYgX2JuM9Vgu7zr0Hat-17" value="&lt;div&gt;ForecastWorker&amp;nbsp;&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1330" y="400" width="370" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="iGYgX2JuM9Vgu7zr0Hat-18" value="&lt;div&gt;+fetchWeatherData(latitude: double, longitude: double)&lt;br/&gt;+saveDailyForecastToCSV()&lt;br/&gt;+saveHourlyForecastToCSV()&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="iGYgX2JuM9Vgu7zr0Hat-17">
+          <mxGeometry y="26" width="370" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="iGYgX2JuM9Vgu7zr0Hat-21" value="&lt;div&gt;DailyForecastManager&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-880" y="400" width="370" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="iGYgX2JuM9Vgu7zr0Hat-22" value="&lt;div&gt;+loadDailyForecasts(): DailyForecast[*]&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="iGYgX2JuM9Vgu7zr0Hat-21">
+          <mxGeometry y="26" width="370" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="iGYgX2JuM9Vgu7zr0Hat-25" value="&lt;div&gt;HourlyForecastManager&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-430" y="400" width="370" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="iGYgX2JuM9Vgu7zr0Hat-26" value="&lt;div&gt;+loadHourlyForecasts(): HourlyForecast[*]&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="iGYgX2JuM9Vgu7zr0Hat-25">
+          <mxGeometry y="26" width="370" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="iGYgX2JuM9Vgu7zr0Hat-29" value="&lt;div&gt;DailyForecast&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-880" y="526" width="370" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="iGYgX2JuM9Vgu7zr0Hat-30" value="&lt;div&gt;-date: Date&amp;nbsp;&lt;/div&gt;&lt;div&gt;-tempF: double&amp;nbsp;&lt;/div&gt;&lt;div&gt;-tempC: double&amp;nbsp;&lt;/div&gt;&lt;div&gt;-conditionCode: String&amp;nbsp;&lt;/div&gt;&lt;div&gt;-precipitationProbability: double&amp;nbsp;&lt;/div&gt;&lt;div&gt;-windSpeed: double&amp;nbsp;&lt;/div&gt;&lt;div&gt;-windDirection: String&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="iGYgX2JuM9Vgu7zr0Hat-29">
+          <mxGeometry y="26" width="370" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="iGYgX2JuM9Vgu7zr0Hat-31" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="iGYgX2JuM9Vgu7zr0Hat-29">
+          <mxGeometry y="140" width="370" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="iGYgX2JuM9Vgu7zr0Hat-32" value="&lt;div&gt;+getWeatherIcon(): String&amp;nbsp;&lt;/div&gt;&lt;div&gt;+getTemperature(unit: String): double&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="iGYgX2JuM9Vgu7zr0Hat-29">
+          <mxGeometry y="148" width="370" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="iGYgX2JuM9Vgu7zr0Hat-33" value="&lt;div&gt;HourlyForecast&lt;/div&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-430" y="526" width="370" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="iGYgX2JuM9Vgu7zr0Hat-34" value="&lt;div&gt;-datetime: DateTime&amp;nbsp;&lt;/div&gt;&lt;div&gt;-tempF: double&amp;nbsp;&lt;/div&gt;&lt;div&gt;-tempC: double&amp;nbsp;&lt;/div&gt;&lt;div&gt;-conditionCode: String&amp;nbsp;&lt;/div&gt;&lt;div&gt;-precipitationProbability: double&amp;nbsp;&lt;/div&gt;&lt;div&gt;-windSpeed: double&amp;nbsp;&lt;/div&gt;&lt;div&gt;-windDirection: String&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="iGYgX2JuM9Vgu7zr0Hat-33">
+          <mxGeometry y="26" width="370" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="iGYgX2JuM9Vgu7zr0Hat-35" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="iGYgX2JuM9Vgu7zr0Hat-33">
+          <mxGeometry y="140" width="370" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="iGYgX2JuM9Vgu7zr0Hat-36" value="&lt;div&gt;+getWeatherIcon(): String&amp;nbsp;&lt;/div&gt;&lt;div&gt;+getTemperature(unit: String): double&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="iGYgX2JuM9Vgu7zr0Hat-33">
+          <mxGeometry y="148" width="370" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="iGYgX2JuM9Vgu7zr0Hat-37" value="&amp;lt;&amp;lt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;external&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;div&gt;WeatherAPI&lt;/div&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-1330" y="550" width="370" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="iGYgX2JuM9Vgu7zr0Hat-38" value="attributes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1" parent="iGYgX2JuM9Vgu7zr0Hat-37">
+          <mxGeometry y="55" width="370" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="iGYgX2JuM9Vgu7zr0Hat-39" value="&lt;div&gt;+getWeatherData(latitude: double, longitude: double): WeatherData&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;" vertex="1" parent="iGYgX2JuM9Vgu7zr0Hat-37">
+          <mxGeometry y="75" width="370" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="iGYgX2JuM9Vgu7zr0Hat-47" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;fontSize=12;curved=1;exitX=0.464;exitY=1.039;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.46;entryY=-0.015;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="iGYgX2JuM9Vgu7zr0Hat-12" target="iGYgX2JuM9Vgu7zr0Hat-17">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-1210" y="368" as="sourcePoint" />
+            <mxPoint x="-1050" y="368" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iGYgX2JuM9Vgu7zr0Hat-48" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;fontSize=12;curved=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="iGYgX2JuM9Vgu7zr0Hat-10" target="iGYgX2JuM9Vgu7zr0Hat-25">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-890" y="110" as="sourcePoint" />
+            <mxPoint x="-175" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iGYgX2JuM9Vgu7zr0Hat-49" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;fontSize=12;curved=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="iGYgX2JuM9Vgu7zr0Hat-10" target="iGYgX2JuM9Vgu7zr0Hat-21">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-730" y="140" as="sourcePoint" />
+            <mxPoint x="-570" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iGYgX2JuM9Vgu7zr0Hat-50" value="" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;fontSize=12;curved=1;exitX=0.468;exitY=1.064;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.468;entryY=-0.011;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="iGYgX2JuM9Vgu7zr0Hat-18" target="iGYgX2JuM9Vgu7zr0Hat-37">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-1520" y="633.44" as="sourcePoint" />
+            <mxPoint x="-1360" y="633.44" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iGYgX2JuM9Vgu7zr0Hat-56" value="" style="endArrow=none;startArrow=none;endFill=0;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=3;rounded=0;fontSize=12;curved=1;exitX=0.457;exitY=0.977;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="iGYgX2JuM9Vgu7zr0Hat-22">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-708.21" y="453.352" as="sourcePoint" />
+            <mxPoint x="-711" y="526" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iGYgX2JuM9Vgu7zr0Hat-57" value="" style="endArrow=none;startArrow=none;endFill=0;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=3;rounded=0;fontSize=12;curved=1;exitX=0.457;exitY=0.977;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-245.13" y="451" as="sourcePoint" />
+            <mxPoint x="-245.13" y="526" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
